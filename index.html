@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Crud Operation 1</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Form Section -->
+        <form autocomplete="off" onsubmit="onFormSubmit(event)">
+            <div>
+                <label for="productCode">Product Code</label>
+                <input type="text" name="productCode" id="productCode">
+            </div>
+            <div>
+                <label for="product">Product Name</label>
+                <input type="text" name="productName" id="productName">
+            </div>
+            <div>
+                <label for="qty">Product Qty</label>
+                <input type="number" name="quantity" id="quantity">
+            </div>
+            <div>
+                <label for="perPrice">Product Price</label>
+                <input type="number" name="pricePerProduct" id="pricePerProduct">
+            </div>
+            <div class="form-action--button">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+
+        <!-- Table Section -->
+        <table class="list" id="storeList">
+            <thead>
+                <tr>
+                    <th>Product Code</th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example Row -->
+                <tr>
+                    <td>12321</td>
+                    <td>awdaw</td>
+                    <td>12321</td>
+                    <td>11</td>
+                    <td>
+                        <button onclick="onEdit(this)">Edit</button>
+                        <button onclick="onDelete(this)">Delete</button>
+                    </td>
+                </tr>
+                <!-- More rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

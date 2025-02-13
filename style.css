@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(images/chill-pictures.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    padding-top: 20px; /* Add some padding at the top */
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: whit;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+table.list {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders are merged */
+    text-align: center; /* Centers text in all cells */
+}
+
+table.list th, table.list td {
+    border: 1px solid #ccc; /* Adds borders to cells */
+    padding: 8px 15px; /* Adds padding to cells */
+}
+
+table.list th {
+    background-color: #f2f2f2; /* Adds a background color to headers */
+    position: sticky; /* Makes headers sticky */
+    top: 0; /* Sticks headers to the top */
+    color: black;
+}
+
+input[type="text"], input[type="number"] {
+    width: 85%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(165, 161, 161);
+    border-radius: 4px;
+}
+
+input[type="submit"], input[type="reset"] {
+    background: #eee;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: 1px solid rgb(165, 161, 161);
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #4b99d8;
+}
+
+input[type="reset"]:hover {
+    background-color: #d63030;
+}
+
+button {
+    background-color: #eee;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background: #4b99d8;
+}
