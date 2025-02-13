@@ -12,19 +12,19 @@
         <form autocomplete="off" onsubmit="onFormSubmit(event)">
             <div>
                 <label for="productCode">Product Code</label>
-                <input type="text" name="productCode" id="productCode">
+                <input type="text" name="productCode" id="productCode" required>
             </div>
             <div>
                 <label for="product">Product Name</label>
-                <input type="text" name="productName" id="productName">
+                <input type="text" name="productName" id="productName" required>
             </div>
             <div>
                 <label for="qty">Product Qty</label>
-                <input type="number" name="quantity" id="quantity">
+                <input type="number" name="quantity" id="quantity" required>
             </div>
             <div>
                 <label for="perPrice">Product Price</label>
-                <input type="number" name="pricePerProduct" id="pricePerProduct">
+                <input type="number" name="pricePerProduct" id="pricePerProduct" required>
             </div>
             <div class="form-action--button">
                 <input type="submit" value="Submit">
@@ -44,7 +44,7 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Example Row -->
+ 
                 <tr>
                     <td>12321</td>
                     <td>awdaw</td>
@@ -55,7 +55,7 @@
                         <button onclick="onDelete(this)">Delete</button>
                     </td>
                 </tr>
-                <!-- More rows will be dynamically added here -->
+
             </tbody>
         </table>
     </div>

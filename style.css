@@ -1,3 +1,4 @@
+/* COMMENTS HERE ARE GUIDED BY AI */
 * {
     padding: 0;
     margin: 0;
@@ -13,8 +14,7 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align items to the top */
-    padding-top: 20px; /* Add some padding at the top */
+    align-items: center;
 }
 
 .container {
@@ -24,7 +24,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     border: 1px solid white;
-    color: whit;
+    color: white;
 }
 
 form {
@@ -43,14 +43,14 @@ table.list th, table.list td {
 }
 
 table.list th {
-    background-color: #f2f2f2; /* Adds a background color to headers */
+    background-color: #f2f2f2;
     position: sticky; /* Makes headers sticky */
     top: 0; /* Sticks headers to the top */
     color: black;
 }
 
 input[type="text"], input[type="number"] {
-    width: 85%;
+    width: 95%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
